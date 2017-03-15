@@ -4,7 +4,7 @@ from django.utils import timezone
 
 # Create your models here.
 
-class Post(models.Model):
+class Post(models.Model):  #class define nuestro Objeto,Post es un nombre para nuestro objeto, models.Model guarda el objeto en la BD
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=200)
     text = models.TextField()
